@@ -11,7 +11,7 @@ function updateCounter() {
   let current = 0;
   $('button').on(
     'click',
-    _.debounce(function () {
+    _.debounce(() => {
       current += 1;
       $('#count').html(current);
     }, 150),

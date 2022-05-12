@@ -14,7 +14,7 @@ function updateCounter() {
     _.debounce(function () {
       current += 1;
       $('#count').html(current);
-    }),
+    }, 150),
   );
 }
 updateCounter();

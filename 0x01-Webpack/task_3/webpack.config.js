@@ -7,7 +7,7 @@ module.exports = {
   entry: './js/dashboard_main.js',
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
   },
   resolve: {
     extensions: ['.js'],
@@ -28,6 +28,7 @@ module.exports = {
       },
     ],
   },
+  devtool: 'inline-source-map',
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
@@ -35,6 +36,7 @@ module.exports = {
     }),
   ],
   devserver: {
-    contentBase: './dist',
+    contentBase: './public',
+    port: 8564,
   },
 };

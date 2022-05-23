@@ -13,7 +13,7 @@ module.exports = {
   mode: 'production',
   module: {
     rules: [
-      { test: /.\css$/, use: ['css-loader', 'style-loader'] },
+      { test: /\.css$/, use: ['css-loader', 'style-loader'] },
       {
         test: /\.(png|jpg|svg)$/i,
         use: [

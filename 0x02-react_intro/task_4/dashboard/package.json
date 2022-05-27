@@ -2,7 +2,7 @@
   "name": "dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Jfprado11.github.io/holbertonschool-web_react/tree/main/0x02-react_intro/task_4/dashboard",
+  "homepage": ".",
   "dependencies": {
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
@@ -10,7 +10,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeply": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",

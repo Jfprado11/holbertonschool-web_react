@@ -1,7 +1,7 @@
 {
   "name": "dashboard",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://jfprado11.github.io/holbertonschool-web_react/",
   "dependencies": {
     "react": "^16.1.0",

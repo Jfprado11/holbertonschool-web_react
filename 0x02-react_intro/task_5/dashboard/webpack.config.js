@@ -1,13 +1,15 @@
 const path = require('path');
 
 module.exports = {
-  entry: 'src/index.js',
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/',
   },
   devtool: 'inline-source-map',
+  resolve: {
+    extensions: ['.js'],
+  },
   module: {
     rules: [
       { test: /\.css$/, use: ['css-loader', 'style-loader'] },
@@ -22,9 +24,5 @@ module.exports = {
         ],
       },
     ],
-  },
-  devserver: {
-    contentBase: './dist',
-    port: 8564,
   },
 };

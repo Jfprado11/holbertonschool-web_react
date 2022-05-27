@@ -6,12 +6,20 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
+  mode: 'development',
   devtool: 'inline-source-map',
   resolve: {
-    extensions: ['.js'],
+    extensions: ['.js', '.jsx'],
   },
   module: {
     rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        },
+      },
       { test: /\.css$/, use: ['css-loader', 'style-loader'] },
       {
         test: /\.(png|jpg|svg)$/i,
@@ -27,8 +35,5 @@ module.exports = {
   },
   devServer: {
     static: path.join(__dirname, 'dist'),
-    compress: true,
-    port: 3006,
-    open: true,
   },
 };

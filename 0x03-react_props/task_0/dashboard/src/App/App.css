@@ -1,0 +1,9 @@
+.App {
+  height: 100vh;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}

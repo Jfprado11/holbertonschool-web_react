@@ -1,0 +1,13 @@
+.App-header {
+  border-bottom: 4px red solid;
+  display: flex;
+  align-items: center;
+}
+
+.App-header img {
+  display: inline-block;
+}
+
+.App-header h1 {
+  color: red;
+}

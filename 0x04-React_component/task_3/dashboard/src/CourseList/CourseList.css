@@ -1,0 +1,17 @@
+.CourseList {
+  height: 300px;
+  text-align: left;
+  border: 2px solid grey;
+  margin: 0 auto;
+  width: 90%;
+}
+
+th[colspan='2'] {
+  text-align: center;
+  padding: 5px;
+}
+
+.CourseList thead th {
+  border-bottom: 2px solid grey;
+  padding: 5px;
+}

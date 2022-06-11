@@ -1,0 +1,9 @@
+th[colspan='2'] {
+  text-align: center;
+  padding: 5px;
+}
+
+#CourseList thead th {
+  border-bottom: 2px solid grey;
+  padding: 10px;
+}

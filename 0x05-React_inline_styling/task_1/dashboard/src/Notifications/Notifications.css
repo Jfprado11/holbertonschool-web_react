@@ -1,0 +1,12 @@
+[data-priority='default'] {
+  color: blue;
+}
+[data-priority='urgent'] {
+  color: red;
+}
+
+.menuItem {
+  /* text-align: right; */
+  /* padding-right: 10px; */
+  margin-bottom: 15px;
+}

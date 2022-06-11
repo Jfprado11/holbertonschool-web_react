@@ -24,22 +24,6 @@ const listNotifications = [
   { id: 3, type: 'urgent', html: { __html: getLatestNotification() } },
 ];
 
-const styles = StyleSheet.create({
-  app: {
-    height: '100vh',
-    margin: 0,
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  notifications: {
-    position: 'absolute',
-    right: '20px',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'flex-end',
-  },
-});
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -95,5 +79,21 @@ App.defaultProps = {
   isLoggedIn: false,
   logOut: function () {},
 };
+
+const styles = StyleSheet.create({
+  app: {
+    height: '100vh',
+    margin: 0,
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  notifications: {
+    position: 'absolute',
+    right: 20,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-end',
+  },
+});
 
 export default App;

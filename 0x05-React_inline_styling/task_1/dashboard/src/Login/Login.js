@@ -5,6 +5,7 @@ import { StyleSheet, css } from 'aphrodite';
 const styles = StyleSheet.create({
   appLogin: {
     padding: 40,
+    margin: 3,
     height: 25,
   },
 });

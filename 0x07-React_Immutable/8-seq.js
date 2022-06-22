@@ -11,6 +11,5 @@ export default function printBestStudents(obj) {
       return item;
     })
     .toObject();
-  console.log(lazySeq);
   return lazySeq;
 }

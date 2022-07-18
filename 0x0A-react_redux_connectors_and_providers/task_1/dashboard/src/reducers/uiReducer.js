@@ -20,7 +20,7 @@ export default function uiReducer(state = Map(initialState), action) {
       return state.set('isNotificationDrawerVisible', true);
 
     case HIDE_NOTIFICATION_DRAWER:
-      return state.set('isNotificationDrawerVisible', true);
+      return state.set('isNotificationDrawerVisible', false);
 
     case LOGIN_SUCCESS:
       return state.set('isUserLoggedIn', true);

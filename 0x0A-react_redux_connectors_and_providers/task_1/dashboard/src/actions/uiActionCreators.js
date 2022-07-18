@@ -7,8 +7,7 @@ import {
   LOGIN_FAILURE,
 } from './uiActionTypes';
 
-const fetch = (...args) =>
-  import('node-fetch').then(({ default: fetch }) => fetch(...args));
+import fetch from 'node-fetch';
 
 function login(email, password) {
   return {
@@ -31,15 +30,13 @@ function displayNotificationDrawer() {
   return { type: DISPLAY_NOTIFICATION_DRAWER };
 }
 
-export const boundDisplayNotificationDrawer = () =>
-  dispatch(displayNotificationDrawer());
+export const boundDisplayNotificationDrawer = () => dispatch(displayNotificationDrawer());
 
 function hideNotificationDrawer() {
   return { type: HIDE_NOTIFICATION_DRAWER };
 }
 
-export const boundHideNotificationDrawer = () =>
-  dispatch(hideNotificationDrawer());
+export const boundHideNotificationDrawer = () => dispatch(hideNotificationDrawer());
 
 function loginSuccess() {
   return {
@@ -63,12 +60,4 @@ function loginRequest(email, password) {
   };
 }
 
-export {
-  login,
-  logout,
-  displayNotificationDrawer,
-  hideNotificationDrawer,
-  loginFailure,
-  loginSuccess,
-  loginRequest,
-};
+export { login, logout, displayNotificationDrawer, hideNotificationDrawer, loginFailure, loginSuccess, loginRequest };
